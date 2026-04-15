@@ -1,7 +1,7 @@
 class Jq5 < Formula
   desc "An extension of jq to work on JSON5 files, preserving comments"
   homepage "https://github.com/vagusX/jq5"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   depends_on "jq"
@@ -9,20 +9,20 @@ class Jq5 < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/vagusX/jq5/releases/download/v#{version}/jq5-darwin-aarch64.tar.gz"
-      sha256 "69fc657582a24b9dd4fb39e55554ebc27e670d1933c64f46f8fd03fcd9b905a8"
+      sha256 "3e4b81917d36de218bff6b629e68ef72be4ffe373a38fb51a74280eb2c6de7b5"
     else
       url "https://github.com/vagusX/jq5/releases/download/v#{version}/jq5-darwin-x86_64.tar.gz"
-      sha256 "4766a1e5bbb9f04a83d03bf31087240ba740392e703ad20ee054ce4abbe0a72e"
+      sha256 "405755ac7b626798128f6f80b57e84b54c691e7afa590f8344df51470cdcc8f3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/vagusX/jq5/releases/download/v#{version}/jq5-linux-aarch64.tar.gz"
-      sha256 "5b00e944822edc9b5130b0e94535dc9607e1e54afd9315871822e653c6dcfc39"
+      sha256 "6e6090ea52e3a798bcf57fda332dc07a02c1eeca352c2290afd01fcdbd476d84"
     else
       url "https://github.com/vagusX/jq5/releases/download/v#{version}/jq5-linux-x86_64.tar.gz"
-      sha256 "1646df2562b60c5a840533225a59980af3bee6082047517585e6ce615094c703"
+      sha256 "3eec05684807cf790d057112a0bb0c7e968aadcc2044014fdb89efa590ea3051"
     end
   end
 
